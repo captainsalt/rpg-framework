@@ -23,7 +23,9 @@ let kitchen = new Prompt(
   ],
 );
 
-let prompts = [bedroom, kitchen];
+let goodEnd = new GoodEndPrompt("You did it. You saved the world");
+
+let prompts = [bedroom, kitchen, goodEnd];
 let game = new Game(prompts);
 
 game.init();
